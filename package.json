@@ -1,0 +1,36 @@
+{
+  "name": "giraf-repo-example",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "name": "TWO-N",
+    "url": "http://two-n.com/"
+  },
+  "scripts": {
+    "start": "webpack --progress --colors --watch"
+  },
+  "dependencies": {
+    "d3": "^4.9.1",
+    "d3-contour": "^1.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.0",
+    "d3-xhr": "^0.1.5",
+    "extract-text-webpack-plugin": "v2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "postcss-loader": "^1.1.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0"
+  }
+}

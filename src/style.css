@@ -1,0 +1,9 @@
+@import 'fonts.css';
+
+.giraf-repo-example {
+  font-family: 'News Cycle', Sans-serif;
+}
+
+.giraf-repo-example .domain {
+  display: none;
+}
