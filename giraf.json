@@ -1,4 +1,16 @@
 {
+  "title": "Example Board",
   "root": "dist",
+  "routes": {
+    "board.md": "../board.md"
+  },
+  "board": {
+    "text": "../README.md"
+  },
+  "data": {
+    "rare.tsv": [
+      "convert-rare-json-t"
+    ]
+  },
   "hello": "world"
 }

@@ -17819,10 +17819,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_favicon_ico___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_favicon_ico__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_faithful_tsv__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_faithful_tsv___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_faithful_tsv__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__giraf_json__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__giraf_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__giraf_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__GirafEmbed__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__GirafEmbed___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__GirafEmbed__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rare_tsv__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rare_tsv___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rare_tsv__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__giraf_json__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__giraf_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__giraf_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__GirafEmbed__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__GirafEmbed___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__GirafEmbed__);
 
 
 
@@ -17830,16 +17832,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-console.log(__WEBPACK_IMPORTED_MODULE_6__giraf_json___default.a);
+
+console.log(__WEBPACK_IMPORTED_MODULE_7__giraf_json___default.a);
 
 
 
 var x = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleLinear"]();
 var y = __WEBPACK_IMPORTED_MODULE_0_d3__["scaleLinear"]();
 
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__GirafEmbed__["createEmbed"])('giraf-repo-example', function (player, app) {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__GirafEmbed__["loadStylesheet"])(player.directory + 'style.css', function () {
-    return initialize(player.el, player.directory + 'faithful.tsv');
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8__GirafEmbed__["createEmbed"])('giraf-repo-example', function (player, app) {
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8__GirafEmbed__["loadStylesheet"])(player.directory + 'style.css',
+  // () => initialize(player.el, player.directory + 'faithful.tsv')
+  function () {
+    return initialize(player.el, player.directory + (player.dataset || 'faithful.tsv'));
   });
 });
 
@@ -17851,7 +17856,7 @@ function initialize(el, url) {
   }, function (error, data) {
     if (error) throw error;
     render(el, data);
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__GirafEmbed__["onResize"])(function () {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_8__GirafEmbed__["onResize"])(function () {
       el.innerHTML = '';
       render(el, data);
     });
@@ -18593,6 +18598,12 @@ module.exports = {
 	"root": "dist",
 	"hello": "world"
 };
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "rare.tsv";
 
 /***/ })
 /******/ ]);

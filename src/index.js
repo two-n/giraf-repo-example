@@ -4,6 +4,7 @@ import 'index.html'
 import 'style.css'
 import 'favicon.ico'
 import 'faithful.tsv'
+import 'rare.tsv'
 import json from '../giraf.json'
 console.log(json)
 
@@ -17,7 +18,8 @@ createEmbed(
   (player, app) => {
     loadStylesheet(
       player.directory + 'style.css',
-      () => initialize(player.el, player.directory + 'faithful.tsv')
+      // () => initialize(player.el, player.directory + 'faithful.tsv')
+      () => initialize(player.el, player.directory + (player.dataset || 'faithful.tsv'))
     )
   }
 )
